@@ -35,3 +35,19 @@ docker exec docker-purephp-main-db-1 mysqldump -u root -padmin dbcenter users > 
 ```terminal
 docker exec docker-purephp-main-db-1 mysqldump -u root -padmin dbcenter > dbcenter_backup.sql
 ```
+
+### docker中身を確認
+```terminal
+docker exec -it docker-purephp-main-app-1 bash
+root@66b4ce616e2a:/var/www/html# 
+root@66b4ce616e2a:/var/www/html#
+root@66b4ce616e2a:/var/www/html# ls
+config.php  db.php  login.php  logout.php  mypage.php  test1.py
+root@66b4ce616e2a:/var/www/html# 
+```
+
+### docker再起動～反映
+```terminal
+docker compose down
+docker compose up -d --build
+```
