@@ -51,3 +51,26 @@ root@66b4ce616e2a:/var/www/html#
 docker compose down
 docker compose up -d --build
 ```
+
+### 配列の形でログ確認したい
+```terminal
+error_log(print_r($配列,true))
+```
+
+### PowerShell で 常に Docker コンテナ内の Apache/PHP のログをリアルタイム監視する方法
+```terminal
+docker logs -f docker-purephp-main-app-1
+```
+
+### test2.php　を動かしたいときは
+```sql
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    price INT NOT NULL
+);
+```
+> 上記テーブル作成し、データ投入してあること。
+
+### 画面表示
+http://localhost:8080/login.php

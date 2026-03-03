@@ -66,12 +66,19 @@ if (!isset($_SESSION['user_id'])) {
 <body>
 
     <div class="container">
+        <?php include 'debug.php'; ?> 
         <h1>マイページ</h1>
         <h2>ようこそ <?php echo $_SESSION['user_name'];
                     ?> 様</h2>
         <p>ユーザ：<?php echo $_SESSION['kengen_name'];
                 ?></p>
         <hr>
+        <div>
+          <a href="test1.php">テストページ1へ</a>
+        </div>
+        <div>
+          <a href="test2.php">テストページ2へ</a>
+        </div>
         <h3>Python実行結果:</h3>
         <pre>
             <?php
@@ -79,7 +86,10 @@ if (!isset($_SESSION['user_id'])) {
             exec($command, $output);
             foreach ($output as $line) {
                 echo $line . "\n";
-            } ?></pre> <a href="logout.php">ログアウト</a>
+            } ?>
+        </pre> 
+        <a href="logout.php">ログアウト</a>
+
 </body>
 
 </html>

@@ -106,6 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         パスワード: <input type="password" name="password" required><br>
         <button type="submit">ログイン</button>
     </form>
+
 </body>
 
 </html>
