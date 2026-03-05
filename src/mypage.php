@@ -79,6 +79,9 @@ if (!isset($_SESSION['user_id'])) {
         <div>
           <a href="test2.php">テストページ2へ</a>
         </div>
+        <div>
+          <a href="test3.php">テストページ3へ</a>
+        </div>
         <h3>Python実行結果:</h3>
         <pre>
             <?php
